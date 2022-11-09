@@ -4,9 +4,11 @@ console.log('Hallo daar!');
 
 async function fetchCountryData() {
     try {
-        const result = await axios.get('https://restcountries.com/v2/all')
-        console.log(result);
+        const axiosResponse = await axios.get('https://restcountries.com/v2/all')
+        console.log(axiosResponse)
+        } catch (e) {
+        console.error(e);
     }
 }
+fetchCountryData();
 
-fetchCountryData()

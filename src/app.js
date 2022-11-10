@@ -12,25 +12,44 @@ async function fetchCountryData() {
         console.log(axiosResponse)
 
 
-        axiosResponse.data.map((country)  => {
+        axiosResponse.data.map((country) => {
 
             const countryNames = document.createElement('li');
             countryNames.setAttribute('class', 'countryName');
             countryNames.textContent = country.name;
-
             countryList.appendChild(countryNames);
+
+            const flagC = document.createElement('img')
+            flagC.setAttribute('class', 'flag')
+            flagC.setAttribute('src', country.flags.png);
+            countryFlag.appendChild(flagC);
+
 
             const populationC = document.createElement('li');
             populationC.setAttribute('class', 'population');
             populationC.textContent = `Has a population of ${country.population} people.`;
+            populationData.appendChild(populationC);
 
-            populationData.appendChild(populationC)
 
-            const flagC = document.createElement('img')
-            flagC.setAttribute('class','flag')
-            flagC.setAttribute('src', country.flags.png);
-
-            countryFlag.appendChild(flagC)
+            switch (country.region) {
+                case "Africa":
+                    countryNames.setAttribute('id', 'africa');
+                    break
+                case "Americas":
+                    countryNames.setAttribute('id', 'americas');
+                    break
+                case "Asia":
+                    countryNames.setAttribute('id', 'asia');
+                    break
+                case "Europe":
+                    countryNames.setAttribute('id', 'europe');
+                    break
+                case "Oceania":
+                    countryNames.setAttribute('id', 'oceania');
+                    break
+                default:
+                    countryNames.setAttribute('id', 'other');
+            }
         })
 
 

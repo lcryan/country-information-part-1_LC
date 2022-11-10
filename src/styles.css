@@ -1,0 +1,39 @@
+main{
+display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+#world-map-image{
+    width: 1000px;
+}
+
+#africa {
+    color: blue;
+}
+
+#americas {
+     color: green;
+ }
+
+#asia {
+    color: red;
+}
+
+#europe {
+    color: yellow;
+}
+
+#oceania {
+    color: rebeccapurple;
+}
+
+#other {
+    color: indianred;
+}
+
+#flagC {
+    width: 100px;
+}

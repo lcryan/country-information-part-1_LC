@@ -1,12 +1,32 @@
-main{
+.header {
+    margin: 10px;
+}
+
+.h1-and-worldmap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "American Typewriter", "sans-serif";
+    color: rebeccapurple;
 }
+
 #world-map-image {
     width: 1000px;
-    display: flex;
+}
 
+main {
+    margin: 10px;
+}
+
+.countries {
+
+    list-style-type: none;
+    font-size: 15px;
+
+}
+
+#flag {
+    width: 100px;
 }
 
 #africa {
@@ -31,8 +51,4 @@ main{
 
 #other {
     color: indianred;
-}
-
-#flagC {
-    width: 100px;
 }

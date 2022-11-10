@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="header">
+    <div class="h1-and-worldmap">
+        <h1>Fun with Countries</h1>
+        <img src="assets/world_map.png" id="world-map-image" alt="colorful image of a world map">
+    </div>
+</header>
+
 <main>
-    <h1>Country and Flag Website</h1>
 
-    <img src="assets/world_map.png" id="world-map-image" alt="colorful image of a world map">
-
-
-    <div id="region"></div>
 
     <div class="americas"></div>
     <div class="asia"></div>
@@ -22,12 +24,11 @@
     <div class="africa"></div>
     <div class="other"></div>
 
-    <span class="countries-and-data" id="flags">
+    <div class="country-box">
+        <ul id="list-of-countries" class="countries">
+        </ul>
+    </div>
 
-    <ul id="list-of-countries">
-
-    </ul>
-    </span>
 </main>
 </body>
 </html>

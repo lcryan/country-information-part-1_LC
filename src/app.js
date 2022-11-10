@@ -19,16 +19,18 @@ async function fetchCountryData() {
             countryNames.textContent = country.name;
             countryList.appendChild(countryNames);
 
+
+
             const flagC = document.createElement('img')
             flagC.setAttribute('id', 'flag')
             flagC.setAttribute('src', country.flags.png);
             countryFlag.appendChild(flagC);
 
-
             const populationC = document.createElement('li');
             populationC.setAttribute('class', 'population');
             populationC.textContent = `Has a population of ${country.population} people`;
             populationData.appendChild(populationC);
+
 
 
             switch (country.region) {

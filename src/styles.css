@@ -18,17 +18,17 @@ main {
     margin: 10px;
 }
 
+
 .countries {
     list-style-type: none;
     font-size: 15px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    column-count: 3;
+    /*flex-wrap: wrap;*/
 }
 
 #flag {
     width: 50px;
+    display: inline-block;
 }
 
 #africa {

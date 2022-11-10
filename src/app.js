@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 console.log('Hallo daar!');
+const countryFlag = document.getElementById('list-of-countries')
 const countryList = document.getElementById('list-of-countries')
 const populationData = document.getElementById('list-of-countries')
-const countryFlag = document.getElementById('list-of-countries')
+
 
 async function fetchCountryData() {
     try {
@@ -25,9 +26,9 @@ async function fetchCountryData() {
 
             populationData.appendChild(populationC)
 
-            const flagC = document.createElement('li')
-            flagC.setAttribute('img', 'flag');
-            flagC.textConten = country.flag
+            const flagC = document.createElement('img')
+            flagC.setAttribute('class','flag')
+            flagC.setAttribute('src', country.flags.png);
 
             countryFlag.appendChild(flagC)
         })

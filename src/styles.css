@@ -19,14 +19,16 @@ main {
 }
 
 .countries {
-
     list-style-type: none;
     font-size: 15px;
-
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #flag {
-    width: 100px;
+    width: 50px;
 }
 
 #africa {

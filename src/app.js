@@ -27,7 +27,7 @@ async function fetchCountryData() {
 
             const populationC = document.createElement('li');
             populationC.setAttribute('class', 'population');
-            populationC.textContent = `Has a population of ${country.population} people.`;
+            populationC.textContent = `Has a population of ${country.population} people`;
             populationData.appendChild(populationC);
 
 

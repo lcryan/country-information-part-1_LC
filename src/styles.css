@@ -1,12 +1,5 @@
-main{
-display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
 
-
-#world-map-image{
+#world-map-image {
     width: 1000px;
 }
 
@@ -15,8 +8,8 @@ display: flex;
 }
 
 #americas {
-     color: green;
- }
+    color: green;
+}
 
 #asia {
     color: red;

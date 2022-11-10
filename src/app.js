@@ -20,7 +20,7 @@ async function fetchCountryData() {
             countryList.appendChild(countryNames);
 
             const flagC = document.createElement('img')
-            flagC.setAttribute('class', 'flag')
+            flagC.setAttribute('id', 'flag')
             flagC.setAttribute('src', country.flags.png);
             countryFlag.appendChild(flagC);
 

@@ -64,7 +64,6 @@ async function fetchCountryData() {
 
     countryList.append(...countries);
 
-
 }
 
 fetchCountryData();

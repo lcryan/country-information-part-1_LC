@@ -1,11 +1,16 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-}
 
+    font-family: "American Typewriter", sans-serif;
+}
 
 .header {
     margin: 10px;
+}
+
+h2 {
+    font-weight: lighter;
 }
 
 .h1-and-worldmap {
@@ -24,6 +29,13 @@ main {
     margin: 10px;
 }
 
+.country-box {
+    margin-top: 20px;
+    background-color: #DFE9EB;
+    border-radius: 20px;
+    height: 7700px
+
+}
 
 .countries {
     list-style-type: none;
@@ -32,39 +44,57 @@ main {
     display: inline-block;
 }
 
+.countryName {
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+
+    margin-left: 15px;
+}
+
+.population {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    font-weight: lighter;
+    font-size: 10px;
+}
+
 #flag {
     width: 40px;
     display: inline-block;
 }
 
 #africa {
-    color: blue;
+    color: #3E8DE3;
 }
 
 #americas {
-    color: green;
+    color: #19b087;
 }
 
 #asia {
-    color: red;
+    color: #c82628;
 }
 
 #europe {
-    color: yellow;
+    color: #d7ad0d;
 }
 
 #oceania {
-    color: rebeccapurple;
+    color: #682bd7;
 }
 
 #other {
-    color: indianred;
+    color: #9c9c9c;
 }
 
-#search-field{
+#search-field {
     width: 300px;
 }
 
-button{
+button {
     width: 80px
 }

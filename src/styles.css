@@ -1,8 +1,11 @@
 body {
     display: flex;
     flex-direction: column;
-
     font-family: "American Typewriter", sans-serif;
+    background: rgb(246,223,223);
+    background: linear-gradient(90deg, rgba(246,223,223,1) 0%, rgba(104,43,215,1) 69%);
+
+
 }
 
 .header {
@@ -18,11 +21,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     font-family: "American Typewriter", "sans-serif";
-    color: rebeccapurple;
+    color: #f5f5f5;
 }
 
 #world-map-image {
     width: 1000px;
+    border-radius: 200px;
 }
 
 main {
@@ -30,11 +34,12 @@ main {
 }
 
 .country-box {
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #DFE9EB;
-    border-radius: 20px;
-    height: 7700px
-
+    border-radius: 50px;
+    border-color: #A9CCCE;
+    height: 7700px;
+    padding: 40px 40px 10px;
 }
 
 .countries {
@@ -47,9 +52,10 @@ main {
 .countryName {
     font-size: 20px;
     font-weight: normal;
-    display: inline-block;
+    /*display: inline-block*/;
+    flex-wrap: wrap;
 
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .population {

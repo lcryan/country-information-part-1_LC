@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 console.log('Hallo daar!');
-const countryFlag = document.getElementById('list-of-countries')
 const countryList = document.getElementById('list-of-countries')
+const countryFlag = document.getElementById('list-of-countries')
 const populationData = document.getElementById('list-of-countries')
 
 
@@ -23,15 +23,17 @@ async function fetchCountryData() {
         const countryNamesContainer = document.createElement('li');
         /*countryNamesContainer.setAttribute('class', 'countryName');*/
 
-        const countryName = document.createElement('span')
-        countryName.textContent = country.name;
-        countryName.setAttribute('class', 'countryName')
-        countryNamesContainer.appendChild(countryName);
+
 
         const flagC = document.createElement('img');
         flagC.setAttribute('id', 'flag');
         flagC.setAttribute('src', country.flags.png);
         countryNamesContainer.appendChild(flagC);
+
+        const countryName = document.createElement('span')
+        countryName.textContent = country.name;
+        countryName.setAttribute('class', 'countryName')
+        countryNamesContainer.appendChild(countryName);
 
         const populationC = document.createElement('p');
         populationC.setAttribute('class', 'population');
